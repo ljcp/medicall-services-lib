@@ -1,11 +1,10 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
+import { HttpModule } from '@angular/http';
 
-
-export {
-    LoginService
-} from './services/login.service'
+export * from './services/login.service';
 
 @NgModule({
+    imports: [HttpModule]
 })
 export class ServiceModule {
 

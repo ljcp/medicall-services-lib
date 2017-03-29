@@ -1,25 +1,37 @@
 {
   "compilerOptions": {
-    "declaration": true,
+    "noImplicitAny": true,
+    "module": "es2015",
+    "target": "es5",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "es5",
-    "module": "es6",
+    "declaration": true,
+    //    "inlineSourceMap": true,
+    //    "inlineSources": true,
     "moduleResolution": "node",
-    "removeComments": true,
-    "sourceMap": true,
-    "outDir": "../lib/",
-    "lib": ["dom", "es6"],
-    "stripInternal": true,
-    "typeRoots": [
-      "./node_modules/@types",
-      "./node_modules"
-    ],
-    "types": [
-      "node"
-    ]
+    "noUnusedLocals": true,
+    "types": ["node"],
+    "lib": ["es2015", "dom"]
   },
+  //"files": [
+  //  "index.ts",
+  //  "ngx-resource.ts",
+  //  "./src/Interfaces.ts",
+  //  "./src/Resource.ts",
+  //  "./src/ResourceAction.ts",
+  //  "./src/ResourceCRUD.ts",
+  //  "./src/ResourceCRUDBase.ts",
+  //  "./src/ResourceGlobalConfig.ts",
+  //  "./src/ResourceModel.ts",
+  //  "./src/ResourceParams.ts",
+  //  "./src/ResourceProviders.ts"
+  //],
   "exclude": [
-    "node_modules"
-  ]
+    "node_modules",
+    "bundles"
+  ],
+  "angularCompilerOptions": {
+    "strictMetadataEmit": true,
+    "skipTemplateCodegen": true
+  }
 }
