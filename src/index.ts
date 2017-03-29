@@ -6,7 +6,6 @@ export {
 } from './services/login.service'
 
 @NgModule({
-    providers:[LoginService]
 })
 export class ServiceModule {
 
