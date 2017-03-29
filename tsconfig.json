@@ -1,17 +1,22 @@
 {
   "compilerOptions": {
-    "noImplicitAny": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "module": "es2015",
     "target": "es5",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "outDir": "dist",
+    "rootDir": "src",
+    "sourceMap": true,
+    "inlineSources": true,
     "declaration": true,
-    //    "inlineSourceMap": true,
-    //    "inlineSources": true,
-    "moduleResolution": "node",
-    "noUnusedLocals": true,
-    "types": ["node"],
-    "lib": ["es2015", "dom"]
+    "removeComments": true,
+    "lib": [
+      "es2015",
+      "dom"
+    ],
+    "skipLibCheck": true,
+    "moduleResolution": "node"
   },
   "files": [
     "index.d.ts",
